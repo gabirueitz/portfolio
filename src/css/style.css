@@ -47,12 +47,11 @@ header {
 .navLinks a:hover {
     color: var(--color2);
     box-shadow: inset 200px 0 0 0 var(--color5);
-
 }
 
 section,
 footer {
-    height: 100vh;
+    min-height: 100dvh;
     padding: calc(var(--header-height) + 30px) 50px 50px 50px;
     background-color: var(--color2);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
@@ -107,7 +106,7 @@ h2 {
 #about .profile {
     width: 300px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    animation: morphing 5s ease-in-out infinite;
+    transition: morphing 5s ease-in-out infinite;
 }
 
 #about .text {
@@ -135,6 +134,13 @@ h2 {
 
 .CVicon {
     height: 50px;
+    filter: drop-shadow(0 0 0 rgb(255, 69, 0));
+    cursor: pointer;
+    animation: fluctuation 2s ease-in-out infinite;
+}
+
+.CVicon:hover {
+    filter: drop-shadow(0 0 15px rgb(255, 169, 0));
 }
 
 #skills {
@@ -409,12 +415,24 @@ h2 {
 }
 
 .project .description p {
-    margin-top: 15px;
+    margin-top: 16px;
+}
+
+.project .description p a:hover {
+    color: var(--color5);
 }
 
 #contact {
     background-image: linear-gradient(var(--color2), var(--color1));
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#contact h2 {
+    transform: rotate(-90deg);
 }
 
 #contact .text {
@@ -427,9 +445,79 @@ h2 {
     margin: 30px 0;
 }
 
+#contact .form-area {
+    width: 40%;
+}
+
+form {
+    margin: 0 auto;
+}
+
+.input-container {
+    position: relative;
+    margin: 50px;
+}
+
+.input-field {
+    margin-left: auto;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.6rem;
+    color: var(--color3);
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+}
+
+.input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--color4);
+    transition: all 0.3s ease;
+}
+
+.input-field:focus+.input-label {
+    top: -20px;
+    font-size: 12px;
+    color: var(--color4);
+}
+
+.input-field:focus+.input-label+.input-highlight {
+    width: 100%;
+}
+
 .hidden {
     display: none;
     position: absolute;
     top: 50%;
     left: -100%;
+}
+
+
+.toAnimate {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.toAnimate.active {
+    transform: translateX(0);
+    opacity: 1;
 }

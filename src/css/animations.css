@@ -1,4 +1,4 @@
-@-webkit-keyframes morphing {
+@keyframes morphing {
     0% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
@@ -12,8 +12,23 @@
     }
 }
 
+@keyframes fluctuation {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-5%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
 /* ---------- Animations of Orbital ---------- */
-@-webkit-keyframes pulse {
+@keyframes pulse {
     0% {
         -webkit-transform: scale(0.9);
         -moz-transform: scale(0.9);
@@ -39,7 +54,7 @@
     }
 }
 
-@-webkit-keyframes spin-right {
+@keyframes spin-right {
     100% {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
@@ -49,7 +64,7 @@
     }
 }
 
-@-webkit-keyframes spin-left {
+@keyframes spin-left {
     100% {
         -webkit-transform: rotate(-360deg);
         -moz-transform: rotate(-360deg);
@@ -59,7 +74,7 @@
     }
 }
 
-@-webkit-keyframes maintain-right {
+@keyframes maintain-right {
     100% {
         -webkit-transform: rotate(-360deg);
         -moz-transform: rotate(-360deg);
@@ -69,7 +84,7 @@
     }
 }
 
-@-webkit-keyframes maintain-left {
+@keyframes maintain-left {
     100% {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
