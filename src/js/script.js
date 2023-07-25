@@ -13,3 +13,13 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+const burguer = document.getElementById('burguer');
+
+function toggleMenu() {
+    const header = document.getElementById('header');
+    header.classList.toggle('active');
+}
+
+burguer.addEventListener('click', toggleMenu);

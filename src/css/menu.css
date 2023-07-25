@@ -12,6 +12,31 @@ header {
     overflow: hidden;
 }
 
+.burguer {
+    display: none;
+    margin-top: 18px;
+    color: aliceblue;
+    background-color: transparent;
+}
+
+.burguer span {
+    display: block;
+    width: 25px;
+    border-top: 2px solid var(--color3);
+}
+
+.burguer span::before,
+.burguer span::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: all .5s;
+}
+
 .navLinks {
     display: flex;
     gap: 15px;
@@ -36,7 +61,7 @@ header {
 @media (max-width: 650px) {
     header {
         align-items: start;
-        transition: all 2s;
+        transition: all 1s;
     }
 
     .burguer {
@@ -47,14 +72,32 @@ header {
         height: 350px;
     }
 
-    .navLinks {
-        flex-direction: column;
-        gap: 25px;
+    header.active .burguer {}
+
+    header.active .burguer span {
+        border-top: transparent;
+    }
+
+    header.active .burguer span::before {
+        transform: rotate(130deg);
+    }
+
+    header.active .burguer span::after {
+        top: -6.5px;
+        transform: rotate(-130deg);
+    }
+
+    nav {
         position: absolute;
         left: 0px;
         top: calc(var(--header-height) + 10px);
     }
-    
+
+    .navLinks {
+        flex-direction: column;
+        gap: 25px;
+    }
+
     .navLinks a {
         padding-left: 20px;
     }
