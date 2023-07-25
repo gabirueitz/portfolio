@@ -23,3 +23,8 @@ function toggleMenu() {
 }
 
 burguer.addEventListener('click', toggleMenu);
+
+function unactivate() {
+    const header = document.getElementById('header');
+    header.classList.toggle('active');
+};

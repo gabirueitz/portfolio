@@ -72,19 +72,17 @@ header {
         height: 350px;
     }
 
-    header.active .burguer {}
-
     header.active .burguer span {
         border-top: transparent;
     }
 
     header.active .burguer span::before {
-        transform: rotate(130deg);
+        transform: rotate(135deg);
     }
 
     header.active .burguer span::after {
         top: -6.5px;
-        transform: rotate(-130deg);
+        transform: rotate(-135deg);
     }
 
     nav {
@@ -99,6 +97,6 @@ header {
     }
 
     .navLinks a {
-        padding-left: 20px;
+        padding-left: 25px;
     }
 }

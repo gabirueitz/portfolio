@@ -58,7 +58,7 @@ footer {
 }
 
 #home .social ul {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #about {
@@ -276,7 +276,7 @@ h2 {
     margin: 26px auto 0;
     padding: 24px;
     position: relative;
-    width: clamp(300px, 300px + 20vw, 600px);
+    width: clamp(280px, 280px + 20vw, 600px);
     aspect-ratio: 4/3;
 }
 
