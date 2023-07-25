@@ -17,7 +17,6 @@
 
 <body>
     <header id="header">
-
         <button class="burguer" id="burguer"><span></span></button>
         <div class="atom">
             <div class="electron"></div>
@@ -108,7 +107,7 @@
             </div>
         </div>
         <div class="linkCV">
-            <span>Acesse aqui meu curriculo: </span> <a href="./src/Roger-Goncalves_CV.pdf" download><img
+            <span>Download do curriculo:</span> <a href="./src/Roger-Goncalves_CV.pdf" download><img
                     src="./src/images/cv.png" alt="botão CV" class="CVicon"></a>
         </div>
 
@@ -461,23 +460,26 @@
         <div class="form-area">
             <form action="">
                 <div class="input-container">
-                    <input placeholder="Nome" class="input-field" type="text">
+                    <input placeholder="Nome" class="input-field" type="text" required>
                     <label for="name" class="input-label">Nome</label>
                     <span class="input-highlight"></span>
                 </div>
 
                 <div class="input-container">
-                    <input placeholder="e-mail" class="input-field" type="text">
+                    <input placeholder="e-mail" class="input-field" type="text" required>
                     <label for="email" class="input-label">e-mail</label>
                     <span class="input-highlight"></span>
                 </div>
 
                 <div class="input-container">
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensagem"
-                        class="input-field"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensagem" class="input-field"
+                        required></textarea>
                     <label for="message" class="input-label">Mensagem</label>
                     <span class="input-highlight"></span>
                 </div>
+
+                <p><button type="submit" class="btn">Enviar</button></p>
+
             </form>
         </div>
     </footer>
@@ -486,6 +488,7 @@
     <script src="./src/js/script.js"></script>
     <script src="./src/js/skillCards.js"></script>
     <script src="./src/js/projectCards.js"></script>
+    <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=ir240s2a&n=n1.ratufa.io"></script>
 </body>
 
 </html>

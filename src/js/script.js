@@ -14,17 +14,16 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-
+/* --------------- Menu --------------- */
 const burguer = document.getElementById('burguer');
+const header = document.getElementById('header');
 
 function toggleMenu() {
-    const header = document.getElementById('header');
     header.classList.toggle('active');
 }
 
 burguer.addEventListener('click', toggleMenu);
 
 function unactivate() {
-    const header = document.getElementById('header');
     header.classList.toggle('active');
 };
