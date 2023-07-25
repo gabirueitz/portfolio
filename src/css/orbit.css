@@ -1,6 +1,6 @@
 :root {
-    --orbital-container-size: 600px;
-    --gap-between: 125px;
+    --orbital-container-size: clamp(280px, 280px + 20vw, 600px);
+    --gap-between: calc(var(--orbital-container-size)/4.8);
     --icon-size: calc(var(--orbital-container-size) / 12);
     --nucleous-diameter: calc(var(--orbital-container-size) - 4.4*var(--gap-between));
     --inner-diameter: calc(var(--orbital-container-size) - 3*var(--gap-between));
@@ -11,7 +11,6 @@
 
 /* --- General placing and adjustments of the orbits --- */
 .orbital-container {
-    display: grid;
     position: relative;
     height: var(--orbital-container-size);
     aspect-ratio: 1 / 1;
