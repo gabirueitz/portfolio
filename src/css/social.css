@@ -1,5 +1,5 @@
 :root {
-    --social-color: rgba(255, 255, 255, 0.7);
+    --social-color: var(--color3);
 }
 
 .social ul {
