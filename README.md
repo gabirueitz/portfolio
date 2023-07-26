@@ -3,7 +3,7 @@
 My personal portfolio, made from scratch, contains several elements that I learned to improve, in a harmonious and well-articulated way. However, this is still the first version and some other features will be added:
 
 - [x] Responsiveness using minimal media query
-- [ ] Light/Dark theme switching
+- [x] Light/Dark theme switching
 - [ ] Portuguese/English language selection
 
 _____
