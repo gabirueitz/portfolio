@@ -19,8 +19,8 @@ _____
 ## Overview
 ### Screenshot
 
-![](./screenshot_desktop.jpeg) 
-![](./screenshot_mobile.jpeg)
+![](./src/images/screenshot_desktop.jpeg) 
+![](./src/images/screenshot_mobile.jpeg)
 
 ### Links
 - Live Site URL: [Github Pages](https://gabirueitz.github.io/portfolio/)
