@@ -1,15 +1,18 @@
 /* --------------- Toggle Themes --------------- */
-let initialTheme = true;
+const root = document.documentElement;
+let themeBtn = document.getElementById("themeBtn");
+let themeSwitcher = document.getElementById("switcher");
 
-function toggleThemes() {
-    const root = document.documentElement;
+themeSwitcher.addEventListener('click', () => {
+    themeBtn.classList.toggle('dark')
+    themeBtn.classList.toggle('light')
 
     if (initialTheme) {
-        root.style.setProperty('--color1', '#');
-        root.style.setProperty('--color2', '#');
-        root.style.setProperty('--color3', '#');
-        root.style.setProperty('--color4', '#');
-        root.style.setProperty('--color5', '#');
+        root.style.setProperty('--color1', '#384466');
+        root.style.setProperty('--color2', '#797999');
+        root.style.setProperty('--color3', '#1F1F32');
+        root.style.setProperty('--color4', '#fff950');
+        root.style.setProperty('--color5', '#1F1F32');
         initialTheme = false;
     } else {
         root.style.setProperty('--color1', '#03091A');
@@ -19,6 +22,12 @@ function toggleThemes() {
         root.style.setProperty('--color5', '#35acac');
         initialTheme = true;
     }
+})
+
+let initialTheme = true;
+
+function toggleThemes() {
+
 }
 
 /* ------------- Paralax Effects ------------- */

@@ -7,15 +7,15 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 30px;
+    padding: 15px 20px;
     z-index: 10;
     overflow: hidden;
 }
 
 .burguer {
     display: none;
-    margin-top: 18px;
-    color: aliceblue;
+    margin: 12px 20px 0 0;
+    color: var(--color3);
     background-color: transparent;
 }
 
@@ -99,4 +99,45 @@ header {
     .navLinks a {
         padding-left: 25px;
     }
+}
+
+#themeBtn {
+    --btn-width: 60px;
+    --btn-height: 30px;
+
+    margin: 5px;
+    background-color: #fff;
+    width: var(--btn-width);
+    height: var(--btn-height);
+    border-radius: 25% 25% 25% 25% / 50% 50% 50% 50%;
+    position: relative;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#themeBtn i {
+    font-size: calc(var(--btn-height) - 15px);
+    color: var(--color1);
+}
+
+#themeBtn .switcher {
+    background-color: var(--color1);
+    height: calc(var(--btn-height) - 5px);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+#themeBtn.dark .switcher {
+    left: 30px;
+}
+
+#themeBtn.light .switcher {
+    left: 5px;
 }
