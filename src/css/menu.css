@@ -12,9 +12,13 @@ header {
     overflow: hidden;
 }
 
+header .items {
+    width: 100%;
+}
+
 .burguer {
     display: none;
-    margin: 12px 20px 0 0;
+    margin: 12px 35px 0 0;
     color: var(--color3);
     background-color: transparent;
 }
@@ -58,54 +62,11 @@ header {
     box-shadow: inset 200px 0 0 0 var(--color5);
 }
 
-@media (max-width: 650px) {
-    header {
-        align-items: start;
-        transition: all 1s;
-    }
-
-    .burguer {
-        display: block;
-    }
-
-    header.active {
-        height: 350px;
-    }
-
-    header.active .burguer span {
-        border-top: transparent;
-    }
-
-    header.active .burguer span::before {
-        transform: rotate(135deg);
-    }
-
-    header.active .burguer span::after {
-        top: -6.5px;
-        transform: rotate(-135deg);
-    }
-
-    nav {
-        position: absolute;
-        left: 0px;
-        top: calc(var(--header-height) + 10px);
-    }
-
-    .navLinks {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .navLinks a {
-        padding-left: 25px;
-    }
-}
 
 #themeBtn {
     --btn-width: 60px;
     --btn-height: 30px;
 
-    margin: 5px;
     background-color: #fff;
     width: var(--btn-width);
     height: var(--btn-height);
@@ -140,4 +101,52 @@ header {
 
 #themeBtn.light .switcher {
     left: 5px;
+}
+
+@media (max-width: 650px) {
+    header {
+        align-items: start;
+        transition: all 1s;
+    }
+
+    .burguer {
+        margin: 18px 20px 0 0;
+        display: block;
+    }
+
+    header.active {
+        height: 350px;
+    }
+
+    header.active .burguer span {
+        border-top: transparent;
+    }
+
+    header.active .burguer span::before {
+        transform: rotate(135deg);
+    }
+
+    header.active .burguer span::after {
+        top: -6.5px;
+        transform: rotate(-135deg);
+    }
+
+    nav {
+        position: absolute;
+        left: 0px;
+        top: calc(var(--header-height) + 10px);
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .navLinks a {
+        padding-left: 25px;
+    }
+
+    #themeBtn {
+        margin-top: 10px;
+    }
 }
