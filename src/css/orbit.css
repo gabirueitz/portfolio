@@ -1,141 +1,171 @@
 :root {
-    --orbital-container-size: clamp(280px, 280px + 20vw, 600px);
-    --gap-between: calc(var(--orbital-container-size)/4.8);
-    --icon-size: calc(var(--orbital-container-size) / 12);
-    --nucleous-diameter: calc(var(--orbital-container-size) - 4.4*var(--gap-between));
-    --inner-diameter: calc(var(--orbital-container-size) - 3*var(--gap-between));
-    --middle-diameter: calc(var(--orbital-container-size) - 2*var(--gap-between));
-    --outer-diameter: calc(var(--orbital-container-size) - 1*var(--gap-between));
-    --rotation-time: 15s;
+	--orbital-container-size: clamp(280px, 280px + 20vw, 600px);
+	--gap-between: calc(var(--orbital-container-size) / 4.8);
+	--icon-size: calc(var(--orbital-container-size) / 12);
+	--nucleous-diameter: calc(
+		var(--orbital-container-size) - 4.4 * var(--gap-between)
+	);
+	--inner-diameter: calc(
+		var(--orbital-container-size) - 3 * var(--gap-between)
+	);
+	--middle-diameter: calc(
+		var(--orbital-container-size) - 2 * var(--gap-between)
+	);
+	--outer-diameter: calc(
+		var(--orbital-container-size) - 1 * var(--gap-between)
+	);
+	--rotation-time: 15s;
 }
 
 /* --- General placing and adjustments of the orbits --- */
 .orbital-container {
-    position: relative;
-    height: var(--orbital-container-size);
-    aspect-ratio: 1 / 1;
-    -webkit-animation: pulse 5s ease-in-out infinite;
-    animation: pulse 5s ease-in-out infinite;
+	position: relative;
+	height: var(--orbital-container-size);
+	aspect-ratio: 1 / 1;
+	-webkit-animation: pulse 5s ease-in-out infinite;
+	animation: pulse 5s ease-in-out infinite;
 }
 
 .nucleous {
-    background-color: rgba(0, 0, 0, .25);
-    border-radius: 100%;
-    position: absolute;
-    height: var(--nucleous-diameter);
-    aspect-ratio: 1 / 1;
-    top: calc((.5*var(--orbital-container-size)) - (.5*var(--nucleous-diameter)));
-    left: calc((.5*var(--orbital-container-size)) - (.5*var(--nucleous-diameter)));
-    box-shadow: 0 0 30px #2196F3;
-    -webkit-animation: pulse 3s ease-in-out infinite;
-    animation: pulse 3s ease-in-out infinite;
+	background-color: rgba(0, 0, 0, 0.25);
+	border-radius: 100%;
+	position: absolute;
+	height: var(--nucleous-diameter);
+	aspect-ratio: 1 / 1;
+	top: calc(
+		(0.5 * var(--orbital-container-size)) - (0.5 * var(--nucleous-diameter))
+	);
+	left: calc(
+		(0.5 * var(--orbital-container-size)) - (0.5 * var(--nucleous-diameter))
+	);
+	box-shadow: 0 0 30px #2196f3;
+	-webkit-animation: pulse 3s ease-in-out infinite;
+	animation: pulse 3s ease-in-out infinite;
 }
 
 .orbit {
-    border: 1px solid rgba(255, 255, 255, .1);
-    border-radius: 100%;
-    position: absolute;
-    aspect-ratio: 1 / 1;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 100%;
+	position: absolute;
+	aspect-ratio: 1 / 1;
 }
 
 /* --- Specific configuration of the orbits --- */
 .inner {
-    height: var(--inner-diameter);
-    top: calc((.5*var(--orbital-container-size)) - (.5*var(--inner-diameter)));
-    left: calc((.5*var(--orbital-container-size)) - (.5*var(--inner-diameter)));
-    -webkit-animation: spin-left var(--rotation-time) linear infinite;
-    animation: spin-left var(--rotation-time) linear infinite;
+	height: var(--inner-diameter);
+	top: calc(
+		(0.5 * var(--orbital-container-size)) - (0.5 * var(--inner-diameter))
+	);
+	left: calc(
+		(0.5 * var(--orbital-container-size)) - (0.5 * var(--inner-diameter))
+	);
+	-webkit-animation: spin-left var(--rotation-time) linear infinite;
+	animation: spin-left var(--rotation-time) linear infinite;
 }
 
 .middle {
-    height: var(--middle-diameter);
-    top: calc((.5*var(--orbital-container-size)) - (.5*var(--middle-diameter)));
-    left: calc((.5*var(--orbital-container-size)) - (.5*var(--middle-diameter)));
-    -webkit-animation: spin-right var(--rotation-time) linear infinite;
-    animation: spin-right var(--rotation-time) linear infinite;
+	height: var(--middle-diameter);
+	top: calc(
+		(0.5 * var(--orbital-container-size)) - (0.5 * var(--middle-diameter))
+	);
+	left: calc(
+		(0.5 * var(--orbital-container-size)) - (0.5 * var(--middle-diameter))
+	);
+	-webkit-animation: spin-right var(--rotation-time) linear infinite;
+	animation: spin-right var(--rotation-time) linear infinite;
 }
 
 .outer {
-    height: var(--outer-diameter);
-    top: calc((.5*var(--orbital-container-size)) - (.5*var(--outer-diameter)));
-    left: calc((.5*var(--orbital-container-size)) - (.5*var(--outer-diameter)));
-    -webkit-animation: spin-left var(--rotation-time) linear infinite;
-    animation: spin-left var(--rotation-time) linear infinite;
+	height: var(--outer-diameter);
+	top: calc(
+		(0.5 * var(--orbital-container-size)) - (0.5 * var(--outer-diameter))
+	);
+	left: calc(
+		(0.5 * var(--orbital-container-size)) - (0.5 * var(--outer-diameter))
+	);
+	-webkit-animation: spin-left var(--rotation-time) linear infinite;
+	animation: spin-left var(--rotation-time) linear infinite;
 }
 
 /* --- Icons configurations --- */
 .planet {
-    width: calc(var(--orbital-container-size) / 10);
-    aspect-ratio: 1 / 1;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+	width: calc(var(--orbital-container-size) / 10);
+	aspect-ratio: 1 / 1;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
 }
 
 .planet .icon {
-    max-width: var(--icon-size);
+	max-width: var(--icon-size);
 }
 
 #code {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #html {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #css {
-    top: 70%;
-    left: 0;
-    transform: translate(0, -25%);
+	top: 50%;
+	left: 0;
+	transform: translate(-50%, -50%);
 }
 
 #js {
-    top: 70%;
-    right: 0;
-    transform: translate(0%, -10%);
+	top: 50%;
+	right: 0;
+	transform: translate(50%, -50%);
 }
 
 #git {
-    top: 5%;
-    left: 0;
-    transform: translate(25%, 25%);
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
 }
 
-#vscode {
-    bottom: 5%;
-    right: 0;
-    transform: translate(-25%, -25%);
+#typescript {
+	top: 5%;
+	left: 0;
+	transform: translate(25%, 25%);
+}
+
+#react {
+	bottom: 5%;
+	right: 0;
+	transform: translate(-25%, -25%);
 }
 
 #python {
-    bottom: 20%;
-    left: 0;
-    transform: translate(-15%, -50%);
+	bottom: 20%;
+	left: 0;
+	transform: translate(-15%, -50%);
 }
 
 #nodejs {
-    top: 20%;
-    right: 0;
-    transform: translate(-50%, -50%);
+	top: 20%;
+	right: 0;
+	transform: translate(-50%, -50%);
 }
 
 /* --- Correction to maintain icons align --- */
 .maintain-left {
-    -webkit-animation: maintain-left var(--rotation-time) linear infinite;
-    animation: maintain-left var(--rotation-time) linear infinite;
+	-webkit-animation: maintain-left var(--rotation-time) linear infinite;
+	animation: maintain-left var(--rotation-time) linear infinite;
 }
 
 .maintain-right {
-    -webkit-animation: maintain-right var(--rotation-time) linear infinite;
-    animation: maintain-right var(--rotation-time) linear infinite;
+	-webkit-animation: maintain-right var(--rotation-time) linear infinite;
+	animation: maintain-right var(--rotation-time) linear infinite;
 }
 
 /* --- Pause animations on hover --- */
@@ -146,6 +176,6 @@
 .orbital-container:hover .outer,
 .orbital-container:hover .maintain-left,
 .orbital-container:hover .maintain-right {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
 }

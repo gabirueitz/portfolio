@@ -1,152 +1,151 @@
 header {
-    position: fixed;
-    height: var(--header-height);
-    width: 100%;
-    background-color: var(--color1);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    z-index: 10;
-    overflow: hidden;
+	position: fixed;
+	height: var(--header-height);
+	width: 100%;
+	background-color: var(--color1);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	z-index: 10;
+	overflow: hidden;
 }
 
 header .items {
-    width: 100%;
+	width: 100%;
 }
 
 .burguer {
-    display: none;
-    margin: 12px 35px 0 0;
-    color: var(--color3);
-    background-color: transparent;
+	display: none;
+	margin: 12px 35px 0 0;
+	color: var(--color3);
+	background-color: transparent;
 }
 
 .burguer span {
-    display: block;
-    width: 25px;
-    border-top: 2px solid var(--color3);
+	display: block;
+	width: 25px;
+	border-top: 2px solid var(--color3);
 }
 
 .burguer span::before,
 .burguer span::after {
-    content: '';
-    display: block;
-    position: relative;
-    width: 25px;
-    height: 2px;
-    background-color: currentColor;
-    margin-top: 5px;
-    transition: all .5s;
+	content: "";
+	display: block;
+	position: relative;
+	width: 25px;
+	height: 2px;
+	background-color: currentColor;
+	margin-top: 5px;
+	transition: all 0.5s;
 }
 
 .navLinks {
-    display: flex;
-    gap: 15px;
+	display: flex;
+	gap: 15px;
 }
 
 .navLinks a {
-    font-size: 2rem;
-    color: var(--color3);
-    font-weight: 700;
-    box-shadow: inset 0 0 0 0 var(--color5);
-    padding: 1rem;
-    margin: 0 -.25rem;
-    transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
-    border-radius: 1px;
+	font-size: 2rem;
+	color: var(--color3);
+	font-weight: 700;
+	box-shadow: inset 0 0 0 0 var(--color5);
+	padding: 1rem;
+	margin: 0 -0.25rem;
+	transition: color 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
+	border-radius: 1px;
 }
 
 .navLinks a:hover {
-    color: var(--color2);
-    box-shadow: inset 200px 0 0 0 var(--color5);
+	color: var(--color2);
+	box-shadow: inset 200px 0 0 0 var(--color5);
 }
 
-
 #themeBtn {
-    --btn-width: 60px;
-    --btn-height: 30px;
+	--btn-width: 60px;
+	--btn-height: 30px;
 
-    background-color: #fff;
-    width: var(--btn-width);
-    height: var(--btn-height);
-    border-radius: 25% 25% 25% 25% / 50% 50% 50% 50%;
-    position: relative;
-    padding: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	background-color: #fff;
+	width: var(--btn-width);
+	height: var(--btn-height);
+	border-radius: 25% 25% 25% 25% / 50% 50% 50% 50%;
+	position: relative;
+	padding: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #themeBtn i {
-    font-size: calc(var(--btn-height) - 15px);
-    color: var(--color1);
+	font-size: calc(var(--btn-height) - 15px);
+	color: var(--color1);
 }
 
 #themeBtn .switcher {
-    background-color: var(--color1);
-    height: calc(var(--btn-height) - 5px);
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all .3s;
-    cursor: pointer;
+	background-color: var(--color1);
+	height: calc(var(--btn-height) - 5px);
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s;
+	cursor: pointer;
 }
 
 #themeBtn.dark .switcher {
-    left: 30px;
+	left: 30px;
 }
 
 #themeBtn.light .switcher {
-    left: 5px;
+	left: 5px;
 }
 
 @media (max-width: 650px) {
-    header {
-        align-items: start;
-        transition: all 1s;
-    }
+	header {
+		align-items: start;
+		transition: all 1s;
+	}
 
-    .burguer {
-        margin: 18px 20px 0 0;
-        display: block;
-    }
+	.burguer {
+		margin: 18px 20px 0 0;
+		display: block;
+	}
 
-    header.active {
-        height: 350px;
-    }
+	header.active {
+		height: 350px;
+	}
 
-    header.active .burguer span {
-        border-top: transparent;
-    }
+	header.active .burguer span {
+		border-top: transparent;
+	}
 
-    header.active .burguer span::before {
-        transform: rotate(135deg);
-    }
+	header.active .burguer span::before {
+		transform: rotate(135deg);
+	}
 
-    header.active .burguer span::after {
-        top: -6.5px;
-        transform: rotate(-135deg);
-    }
+	header.active .burguer span::after {
+		top: -6.5px;
+		transform: rotate(-135deg);
+	}
 
-    nav {
-        position: absolute;
-        left: 0px;
-        top: calc(var(--header-height) + 10px);
-    }
+	nav {
+		position: absolute;
+		left: 0px;
+		top: calc(var(--header-height) + 10px);
+	}
 
-    .navLinks {
-        flex-direction: column;
-        gap: 25px;
-    }
+	.navLinks {
+		flex-direction: column;
+		gap: 25px;
+	}
 
-    .navLinks a {
-        padding-left: 25px;
-    }
+	.navLinks a {
+		padding-left: 25px;
+	}
 
-    #themeBtn {
-        margin-top: 10px;
-    }
+	#themeBtn {
+		margin-top: 10px;
+	}
 }

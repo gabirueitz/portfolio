@@ -1,500 +1,750 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Roger Gonçalves</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roger Gonçalves</title>
+		<link rel="stylesheet" href="./src/css/reset.css" />
+		<link rel="stylesheet" href="./src/css/atom.css" />
+		<link rel="stylesheet" href="./src/css/menu.css" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="./src/css/orbit.css" />
+		<link rel="stylesheet" href="./src/css/social.css" />
+		<link rel="stylesheet" href="./src/css/animations.css" />
+	</head>
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/atom.css">
-    <link rel="stylesheet" href="./src/css/menu.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/orbit.css">
-    <link rel="stylesheet" href="./src/css/social.css">
-    <link rel="stylesheet" href="./src/css/animations.css">
-</head>
+	<body>
+		<header id="header">
+			<button class="burguer" id="burguer"><span></span></button>
+			<div class="atom">
+				<div class="electron"></div>
+				<div class="electron-alpha"></div>
+				<div class="electron-omega"></div>
+			</div>
 
-<body>
-    <header id="header">
-        <button class="burguer" id="burguer"><span></span></button>
-        <div class="atom">
-            <div class="electron"></div>
-            <div class="electron-alpha"></div>
-            <div class="electron-omega"></div>
-        </div>
+			<nav id="nav">
+				<ul class="navLinks">
+					<li><a onclick="unactivate()" href="#home">Home</a></li>
+					<li><a onclick="unactivate()" href="#about">Sobre</a></li>
+					<li><a onclick="unactivate()" href="#skills">Habilidades</a></li>
+					<li><a onclick="unactivate()" href="#projects">Projetos</a></li>
+					<li><a onclick="unactivate()" href="#contact">Contato</a></li>
+				</ul>
+			</nav>
 
-        <nav id="nav">
-            <ul class="navLinks">
-                <li><a onclick="unactivate()" href="#home">Home</a></li>
-                <li><a onclick="unactivate()" href="#about">Sobre</a></li>
-                <li><a onclick="unactivate()" href="#skills">Habilidades</a></li>
-                <li><a onclick="unactivate()" href="#projects">Projetos</a></li>
-                <li><a onclick="unactivate()" href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+			<div class="dark" id="themeBtn">
+				<i class="fa-solid fa-moon"></i>
+				<i class="fa-solid fa-sun"></i>
+				<div class="switcher" id="switcher"></div>
+			</div>
+		</header>
 
-        <div class="dark" id="themeBtn">
-            <i class="fa-solid fa-moon"></i>
-            <i class="fa-solid fa-sun"></i>
-            <div class="switcher" id="switcher"></div>
-        </div>
-    </header>
+		<section id="home">
+			<div class="column">
+				<div class="text">
+					<p>Olá, sou o</p>
+					<h1>Roger Gonçalves</h1>
+					<p>Químico e Desenvolvedor FrontEnd</p>
+				</div>
 
-    <section id="home">
-        <div class="column">
-            <div class="text">
-                <p>Olá, sou o</p>
-                <h1>Roger Gonçalves</h1>
-                <p>Químico e Desenvolvedor FrontEnd</p>
-            </div>
+				<div class="social">
+					<p>Me siga nas redes:</p>
 
-            <div class="social">
-                <p>Me siga nas redes:</p>
+					<ul>
+						<li>
+							<a
+								class="linkedin"
+								href="https://www.linkedin.com/in/roger-gabiru-goncalves/"
+								target="_blank">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								class="instagram"
+								href="https://www.instagram.com/gabirueitz/"
+								target="_blank">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								class="twitter"
+								href="https://twitter.com/gabirueitz"
+								target="_blank">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								class="github"
+								href="https://github.com/gabirueitz"
+								target="_blank">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-                <ul>
-                    <li>
-                        <a class="linkedin" href="https://www.linkedin.com/in/roger-gabiru-goncalves/" target="_blank">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="instagram" href="https://www.instagram.com/gabirueitz/" target="_blank">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="twitter" href="https://twitter.com/gabirueitz" target="_blank">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="github" href="https://github.com/gabirueitz" target="_blank">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+			<img
+				class="illustration"
+				src="./src/images/ilustration.png"
+				alt="Illustration" />
+		</section>
+		<section id="about">
+			<h2>Sobre mim</h2>
+			<div class="content">
+				<img
+					src="./src/images/profile_photo.jpg"
+					alt="Foto de perfil"
+					class="profile" />
+				<div class="text toAnimate">
+					<p>
+						Brasileiro, fluente em inglês, formado em Química pela Universidade
+						Federal do Paraná (UFPR), além de Mestre e Doutor em Química pela
+						Universidade Federal de São Carlos (UFSCar). Sempre gostei da área
+						de programação, buscando agregar isso à minha pesquisa ao longo da
+						minha trajetória acadêmica. Atualmente pretendo ser umprogramador
+						FrontEnd fazendo o contrário: me desenvolvendo na programação e
+						adicionando pitadas de Química.
+					</p>
+					<p>
+						Atualmente estou aprimorando meus conhecimentos de FrontEnd nas
+						plataformas EuCurso, DevQuest e Alura, enquanto começo meus estudos
+						em BackEnd. Gosto de usar soluções criativas e práticas explicando
+						os detalhes daquilo que estou fazendo.
+					</p>
+				</div>
+			</div>
+			<div class="linkCV">
+				<span>Download do curriculo:</span
+				><a href="./src/Roger-Goncalves_CV.pdf" download
+					><img src="./src/images/cv.png" alt="botão CV" class="CVicon"
+				/></a>
+			</div>
+		</section>
+		<section id="skills">
+			<div class="column">
+				<h2>Habilidades</h2>
 
-        <img class="illustration" src="./src/images/ilustration.png" alt="Illustration">
+				<div class="texts">
+					<div id="msg">
+						<p>Explore o átomo para saber mais sobre minhas habilidades:</p>
+						<ul>
+							<li>
+								A <b>órbita</b> (círculo) <b>interna</b> corresponde as
+								habilidades basicas que um desenvolvedor FrontEnd deve saber, o
+								que define seu "átomo de programador"
+							</li>
+							<li>
+								A <b>órbita</b> (círculo) <b>média</b> encerra os Frameworks e
+								bibliotecas úteis que aumentam a versatilidade do desenvolvedor
+							</li>
+							<li>
+								Por fim, a <b>órbita</b> (círculo) <b>externa</b> contém as
+								habiolidades que começam a trazer hanilidades de BackEnd,
+								aumentando ainda mais o leque de habilidades deste átomo.
+							</li>
+						</ul>
+					</div>
 
-    </section>
-    <section id="about">
+					<div class="card" id="htmlCard">
+						<img src="./src/icons/html.svg" alt="icone HTML" />
+						<h3>HTML</h3>
+						<p>
+							É uma linguagem de marcação utilizada para criar e estruturar
+							páginas da web. Usando tags para marcar elementos como cabeçalhos,
+							parágrafos, links, imagens e tabelas define o conteúdo e layout de
+							páginas da web. Faz parte da "tríade do FrontEnd".
+						</p>
+					</div>
 
-        <h2>Sobre mim</h2>
-        <div class="content">
-            <img src="./src/images/profile_photo.jpg" alt="Foto de perfil" class="profile">
-            <div class="text toAnimate">
-                <p>Brasileiro, fluente em inglês, formado em Química pela Universidade Federal do Paraná (UFPR), além de
-                    Mestre e Doutor em Química pela Universidade Federal de São Carlos (UFSCar). Sempre gostei da área
-                    de programação, buscando agregar isso à minha pesquisa ao longo da minha trajetória acadêmica.
-                    Atualmente pretendo ser umprogramador FrontEnd fazendo o contrário: me desenvolvendo na programação
-                    e adicionando pitadas de Química.</p>
-                <p>Atualmente estou aprimorando meus conhecimentos de FrontEnd nas plataformas EuCurso, DevQuest e
-                    Alura, enquanto começo meus estudos em BackEnd. Gosto de usar soluções criativas e práticas
-                    explicando os detalhes daquilo que estou fazendo.</p>
-            </div>
-        </div>
-        <div class="linkCV">
-            <span>Download do curriculo:</span> <a href="./src/Roger-Goncalves_CV.pdf" download><img
-                    src="./src/images/cv.png" alt="botão CV" class="CVicon"></a>
-        </div>
+					<div class="card" id="cssCard">
+						<img src="./src/icons/css.svg" alt="icone CSS" />
+						<h3>CSS</h3>
+						<p>
+							É uma linguagem de estilo usada para controlar a aparência e o
+							layout de páginas da web. Permite definir cores, fontes,
+							espaçamentos, posicionamento e outros estilos para elementos HTML,
+							melhorando o design e a experiência do usuário. Também faz parte
+							da "tríade do FrontEnd".
+						</p>
+					</div>
 
-    </section>
-    <section id="skills">
-        <div class="column">
-            <h2>Habilidades</h2>
+					<div class="card" id="jsCard">
+						<img src="./src/icons/javascript.svg" alt="icone JavaScript" />
+						<h3>JavaScript</h3>
+						<p>
+							É uma linguagem de programação de alto nível, usada para criar
+							interatividade e dinamismo em páginas da web. Permite manipular
+							elementos HTML, responder a eventos, validar formulários, criar
+							animações e desenvolver aplicativos web avançados. Último
+							componente da "tríade do FrontEnd".
+						</p>
+					</div>
 
-            <div class="texts">
-                <p id="msg">Explore o átomo para saber mais sobre minhas habilidades:
-                </p>
+					<div class="card" id="gitCard">
+						<img src="./src/icons/git.svg" alt="icone Git" />
+						<h3>Git</h3>
+						<p>
+							É um sistema de controle de versão distribuído, amplamente
+							utilizado no desenvolvimento de software. Embora não faça parte da
+							"tríade", é importante pois permite gerenciar alterações em
+							projetos, rastreando o histórico de modificações, facilitando o
+							trabalho em equipe, o controle de versões e a colaboração
+							eficiente.
+						</p>
+					</div>
 
-                <div class="card" id="htmlCard">
-                    <img src="./src/icons/html.svg" alt="icone HTML">
-                    <h3>HTML</h3>
-                    <p>É uma linguagem de marcação utilizada para criar e estruturar páginas da web. Usando tags para
-                        marcar elementos como cabeçalhos, parágrafos, links, imagens e tabelas define o conteúdo e
-                        layout de
-                        páginas da web. Faz parte da "tríade do FrontEnd".</p>
-                </div>
+					<div class="card" id="typescriptCard">
+						<img src="./src/icons/typescript.svg" alt="icone TypeScript" />
+						<h3>TypeScript</h3>
+						<p>
+							É uma linguagem de programação desenvolvida pela Microsoft, que
+							adiciona tipagem estática ao JavaScript. Oferece recursos
+							avançados de organização, segurança e manutenção de código em
+							projetos complexos e colaborativos.
+						</p>
+						<span class="comment">(começando os estudos...)</span>
+					</div>
 
-                <div class="card" id="cssCard">
-                    <img src="./src/icons/css.svg" alt="icone CSS">
-                    <h3>CSS</h3>
-                    <p>É uma linguagem de estilo usada para controlar a aparência e o layout de páginas da web. Permite
-                        definir cores, fontes, espaçamentos, posicionamento e outros estilos para elementos HTML,
-                        melhorando
-                        o design e a experiência do usuário. Também faz parte da "tríade do FrontEnd".</p>
-                </div>
+					<div class="card" id="reactCard">
+						<img src="./src/icons/react.svg" alt="icone React" />
+						<h3>React</h3>
+						<p>
+							É uma biblioteca JavaScript de código aberto desenvolvida pelo
+							Facebook. Utilizada para a criação de interfaces de usuário
+							interativas e reativas, permitindo a construção eficiente de
+							componentes reutilizáveis e dinâmicos em aplicações web.
+						</p>
+						<span class="comment">(começando os estudos...)</span>
+					</div>
 
-                <div class="card" id="jsCard">
-                    <img src="./src/icons/javascript.svg" alt="icone JavaScript">
-                    <h3>JavaScript</h3>
-                    <p>É uma linguagem de programação de alto nível, usada para criar interatividade e dinamismo em
-                        páginas
-                        da web. Permite manipular elementos HTML, responder a eventos, validar formulários, criar
-                        animações
-                        e desenvolver aplicativos web avançados. Último componente da "tríade do FrontEnd".</p>
-                </div>
+					<div class="card" id="nodejsCard">
+						<img src="./src/icons/node-js.svg" alt="icone NodeJS" />
+						<h3>NodeJS</h3>
+						<p>
+							É um ambiente de execução de código JavaScript fora do navegador.
+							Ele permite que os desenvolvedores criem aplicativos de servidor
+							altamente escaláveis e em tempo real, usando JavaScript tanto no
+							lado do cliente quanto no lado do servidor. Muito útil para o
+							desenvolvimento BackEnd.
+						</p>
+						<span class="comment">(começando os estudos...)</span>
+					</div>
 
-                <div class="card" id="gitCard">
-                    <img src="./src/icons/git.svg" alt="icone Git">
-                    <h3>Git</h3>
-                    <p>É um sistema de controle de versão distribuído, amplamente utilizado no desenvolvimento de
-                        software.
-                        Permite gerenciar alterações em projetos, rastreando o histórico de modificações, facilitando o
-                        trabalho em equipe, o controle de versões e a colaboração eficiente.</p>
-                </div>
+					<div class="card" id="pythonCard">
+						<img src="./src/icons/python.svg" alt="icone Python" />
+						<h3>Python</h3>
+						<p>
+							É uma linguagem de programação de alto nível, interpretada e de
+							propósito geral. Com uma sintaxe simples e legível, é amplamente
+							utilizada para desenvolvimento de software, automação, análise de
+							dados e criação de aplicações web.
+						</p>
+						<span class="comment">(começando os estudos...)</span>
+					</div>
+				</div>
+			</div>
 
-                <div class="card" id="vscodeCard">
-                    <img src="./src/icons/vscode.svg" alt="icone VSCode">
-                    <h3>VSCode</h3>
-                    <p> VSCode (Visual Studio Code) é um editor de código-fonte altamente popular e amplamente
-                        utilizado.
-                        Desenvolvido pela Microsoft, oferece uma interface leve e poderosa, com recursos avançados de
-                        edição, depuração e integração com diversas linguagens de programação e extensões.</p>
-                </div>
+			<div class="orbital-container toAnimate" id="orbital-container">
+				<div class="nucleous">
+					<img
+						src="./src/icons/fonte-code.png"
+						alt="ícone de código fonte"
+						class="icon"
+						id="code" />
+				</div>
 
-                <div class="card" id="nodejsCard">
-                    <img src="./src/icons/node-js.svg" alt="icone NodeJS">
-                    <h3>NodeJS</h3>
-                    <p>É um ambiente de execução de código JavaScript fora do navegador. Ele permite que os
-                        desenvolvedores
-                        criem aplicativos de servidor altamente escaláveis e em tempo real, usando JavaScript tanto no
-                        lado
-                        do cliente quanto no lado do servidor. Muito útil para o desenvolvimento BackEnd.</p>
-                    <span class="comment">(começando os estudos...)</span>
-                </div>
+				<div class="outer orbit">
+					<div class="planet" id="python">
+						<acronym title="Python"
+							><img
+								src="./src/icons/python.svg"
+								alt="icone Python"
+								class="icon maintain-left"
+						/></acronym>
+					</div>
+					<div class="planet" id="nodejs">
+						<acronym title="NodeJS"
+							><img
+								src="./src/icons/node-js.svg"
+								alt="icone NodeJS"
+								class="icon maintain-left"
+						/></acronym>
+					</div>
+				</div>
 
-                <div class="card" id="pythonCard">
-                    <img src="./src/icons/python.svg" alt="icone Python">
-                    <h3>Python</h3>
-                    <p>É uma linguagem de programação de alto nível, interpretada e de propósito geral. Com uma sintaxe
-                        simples e legível, é amplamente utilizada para desenvolvimento de software, automação, análise
-                        de
-                        dados e criação de aplicações web.</p>
-                    <span class="comment">(começando os estudos...)</span>
-                </div>
-            </div>
-        </div>
+				<div class="middle orbit">
+					<div class="planet" id="typescript">
+						<acronym title="TypeScript"
+							><img
+								src="./src/icons/typescript.svg"
+								alt="icone TypeScript"
+								class="icon maintain-right"
+						/></acronym>
+					</div>
+					<div class="planet" id="react">
+						<acronym title="React"
+							><img
+								src="./src/icons/react.svg"
+								alt="icone React"
+								class="icon maintain-right"
+						/></acronym>
+					</div>
+				</div>
 
-        <div class="orbital-container toAnimate" id="orbital-container">
-            <div class="nucleous">
-                <img src="./src/icons/fonte-code.png" alt="ícone de código fonte" class="icon" id="code">
-            </div>
+				<div class="inner orbit">
+					<div class="planet" id="html">
+						<acronym title="HTML"
+							><img
+								src="./src/icons/html.svg"
+								alt="icone HTML"
+								class="icon maintain-left"
+						/></acronym>
+					</div>
+					<div class="planet" id="css">
+						<acronym title="CSS"
+							><img
+								src="./src/icons/css.svg"
+								alt="icone CSS"
+								class="icon maintain-left"
+						/></acronym>
+					</div>
+					<div class="planet" id="js">
+						<acronym title="JavaScript"
+							><img
+								src="./src/icons/javascript.svg"
+								alt="icone JavaScript"
+								class="icon maintain-left"
+						/></acronym>
+					</div>
+					<div class="planet" id="git">
+						<acronym title="Git"
+							><img
+								src="./src/icons/git.svg"
+								alt="icone Git"
+								class="icon maintain-left"
+						/></acronym>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <div class="outer orbit">
-                <div class="planet" id="python"><img src="./src/icons/python.svg" alt="icone Python"
-                        class="icon maintain-left"></div>
-                <div class="planet" id="nodejs"><img src="./src/icons/node-js.svg" alt="icone NodeJS"
-                        class="icon maintain-left"></div>
-            </div>
+		<section id="projects">
+			<h2>Projetos</h2>
+			<div class="content">
+				<div class="stand">
+					<div class="shelves shelf1">
+						<acronym title="Linktree Clone"
+							><div class="flask" id="flask1">
+								<div
+									class="flaskIMG"
+									style="
+										background-image: url('./src/images/linktree-clone.jpeg');
+									"></div>
+								<img src="./src/images/erlenmeyer_nofiller.png" alt="" /></div
+						></acronym>
 
-            <div class="middle orbit">
-                <div class="planet" id="git"><img src="./src/icons/git.svg" alt="icone Git" class="icon maintain-right">
-                </div>
-                <div class="planet" id="vscode"><img src="./src/icons/vscode.svg" alt="icone VSCode"
-                        class="icon maintain-right"></div>
-            </div>
+						<acronym title="Site Escola Infantil"
+							><div class="flask" id="flask2">
+								<div
+									class="flaskIMG"
+									style="
+										background-image: url('./src/images/casinha-da-vila.jpeg');
+									"></div>
+								<img src="./src/images/erlenmeyer_nofiller.png" alt="" /></div
+						></acronym>
 
-            <div class="inner orbit">
-                <div class="planet" id="html"><img src="./src/icons/html.svg" alt="icone HTML"
-                        class="icon maintain-left"></div>
-                <div class="planet" id="css"><img src="./src/icons/css.svg" alt="icone CSS" class="icon maintain-left">
-                </div>
-                <div class="planet" id="js"><img src="./src/icons/javascript.svg" alt="icone JavaScript"
-                        class="icon maintain-left"></div>
-            </div>
+						<acronym title="Site de Página Única"
+							><div class="flask" id="flask3">
+								<div
+									class="flaskIMG"
+									style="
+										background-image: url('./src/images/isadora-duarte.jpeg');
+									"></div>
+								<img src="./src/images/erlenmeyer_nofiller.png" alt="" /></div
+						></acronym>
+					</div>
 
-        </div>
-    </section>
+					<div class="shelves shelf2">
+						<acronym title="Site de Grupo de Pesquisa"
+							><div class="flask" id="flask4">
+								<div
+									class="flaskIMG"
+									style="
+										background-image: url('./src/images/nanofael.jpeg');
+									"></div>
+								<img src="./src/images/erlenmeyer_nofiller.png" alt="" /></div
+						></acronym>
 
-    <section id="projects">
-        <h2>Projetos</h2>
-        <div class="content">
-            <div class="stand">
-                <div class="shelves shelf1">
+						<acronym title="Calculadora Pesonalizada"
+							><div class="flask" id="flask5">
+								<div
+									class="flaskIMG"
+									style="
+										background-image: url('./src/images/calculadora-ms.jpeg');
+									"></div>
+								<img src="./src/images/erlenmeyer_nofiller.png" alt="" /></div
+						></acronym>
 
-                    <div class="flask" id="flask1">
-                        <div class="flaskIMG" style="background-image: url('./src/images/linktree-clone.jpeg');"></div>
-                        <img src="./src/images/erlenmeyer_nofiller.png" alt="">
-                    </div>
+						<acronym title="Em andamento..."
+							><div class="flask" id="flask6">
+								<div
+									class="flaskIMG"
+									style="
+										background-image: url('./src/images/reagindo.webp');
+									"></div>
+								<img src="./src/images/erlenmeyer_nofiller.png" alt="" /></div
+						></acronym>
+					</div>
+					<div class="shelves shelf3"></div>
+				</div>
 
-                    <div class="flask" id="flask2">
-                        <div class="flaskIMG" style="background-image: url('./src/images/casinha-da-vila.jpeg');"></div>
-                        <img src="./src/images/erlenmeyer_nofiller.png" alt="">
-                    </div>
+				<div class="letter-container toAnimate">
+					<div class="letter">
+						<div id="project-msg">
+							<p>
+								Explore as reações (projetos) prontos na estante de vidrarias.
+							</p>
+							<br />
+							<p>
+								Relatório de experimento: neste experimento foir feito um lorem
+								ipsum dolor sit amet consectetur adipisicing elit. Animi
+								molestias optio quisquam! Asperiores repudiandae error hic odit
+								quo consequuntur nobis sapiente facilis, porro ipsa quos
+								perferendis aspernatur ut provident temporibus? Cumque commodi
+								libero, ullam distinctio recusandae corporis corrupti deleniti,
+								vel modi impedit itaque sapiente dolores voluptatum, sed ratione
+								sit obcaecati nesciunt esse hic labore? Qui sapiente veritatis
+								fuga consequatur nihil! Amet vel eaque dolorum nostrum esse.
+								Rerum assumenda voluptates repudiandae fuga facilis cum
+								praesentium voluptatibus incidunt voluptatum quam.
+							</p>
+						</div>
 
-                    <div class="flask" id="flask3">
-                        <div class="flaskIMG" style="background-image: url('./src/images/isadora-duarte.jpeg');"></div>
-                        <img src="./src/images/erlenmeyer_nofiller.png" alt="">
-                    </div>
-                </div>
+						<div class="project" id="project1">
+							<a
+								href="https://gabirueitz.github.io/my-linktree-clone/"
+								target="_blank">
+								<div class="projectPhoto">
+									<i class="fa-solid fa-paperclip"></i>
+									<img
+										src="./src/images/linktree-clone.jpeg"
+										alt="Foto do projeto 1" />
+									<p>Clique aqui para visitar</p>
+								</div>
+							</a>
+							<div class="description">
+								<h3>Linktree Clone</h3>
+								<p>
+									Projeto baseado no Linktree, uma página única com links de
+									redes sociais. Seu layout foi feito principalemnte pensando em
+									celular. Um QRCode contém o link para esse deployment, assim,
+									de uma forma rápida, é possível acessar as redes contidas
+									nessa página totalmente personalizável.
+								</p>
+								<p>
+									Veja o código
+									<a
+										href="https://github.com/gabirueitz/my-linktree-clone"
+										target="_blank"
+										><strong>aqui</strong></a
+									>.
+								</p>
+							</div>
+						</div>
 
-                <div class="shelves shelf2">
-                    <div class="flask" id="flask4">
-                        <div class="flaskIMG" style="background-image: url('./src/images/nanofael.jpeg');"></div>
-                        <img src="./src/images/erlenmeyer_nofiller.png" alt="">
-                    </div>
+						<div class="project" id="project2">
+							<a
+								href="https://gabirueitz.github.io/casinha-da-vila"
+								target="_blank">
+								<div class="projectPhoto">
+									<i class="fa-solid fa-paperclip"></i>
+									<img
+										src="./src/images/casinha-da-vila.jpeg"
+										alt="Foto do projeto 2" />
+									<p>Clique aqui para visitar</p>
+								</div>
+							</a>
+							<div class="description">
+								<h3>Site de Escola infantil</h3>
+								<p>
+									Site de escola infantil totalmente responsivo. Conta com
+									galeria de imagens e carroseis de imagens para mostrar fotos
+									que batem com os valores da escola, além de um rápido tour
+									pelo espaço físico da mesma. Elementos coloridos dão a ideia
+									de um ambiente atrativo, assim como o próprio espaço físico da
+									escola
+								</p>
+								<p>
+									Confira o código
+									<a
+										href="https://github.com/gabirueitz/casinha-da-vila"
+										target="_blank"
+										><strong>aqui</strong></a
+									>.
+								</p>
+							</div>
+						</div>
 
-                    <div class="flask" id="flask5">
-                        <div class="flaskIMG" style="background-image: url('./src/images/calculadora-ms.jpeg');"></div>
-                        <img src="./src/images/erlenmeyer_nofiller.png" alt="">
-                    </div>
+						<div class="project" id="project3">
+							<a
+								href="https://gabirueitz.github.io/isadora_duarte"
+								target="_blank">
+								<div class="projectPhoto">
+									<i class="fa-solid fa-paperclip"></i>
+									<img
+										src="./src/images/isadora-duarte.jpeg"
+										alt="Foto do projeto 3" />
+									<p>Clique aqui para visitar</p>
+								</div>
+							</a>
+							<div class="description">
+								<h3>Site de página única</h3>
+								<p>
+									Site de advocacia responsivo de uma única página. Os links dão
+									acesso as diferentes seções do site, enquanto efeitos
+									<i>paralax</i> dão um ar de sofisticação à página. Um
+									formulário de contato permite que os clientes mandem perguntas
+									diretamente no e-mail. Um botão visivel o tempo todo dá um
+									acesso rápido ao Whatsapp da empresa.
+								</p>
+								<p>
+									Confira o código
+									<a
+										href="https://github.com/gabirueitz/isadora_duarte"
+										target="_blank"
+										><strong>aqui</strong></a
+									>.
+								</p>
+							</div>
+						</div>
 
-                    <div class="flask" id="flask6">
-                        <div class="flaskIMG" style="background-image: url('./src/images/reagindo.webp');"></div>
-                        <img src="./src/images/erlenmeyer_nofiller.png" alt="">
-                    </div>
-                </div>
-                <div class="shelves shelf3"></div>
-            </div>
+						<div class="project" id="project4">
+							<a href="https://gabirueitz.github.io/nanofael" target="_blank">
+								<div class="projectPhoto">
+									<i class="fa-solid fa-paperclip"></i>
+									<img
+										src="./src/images/nanofael.jpeg"
+										alt="Foto do projeto 4" />
+									<p>Clique aqui para visitar</p>
+								</div>
+							</a>
+							<div class="description">
+								<h3>Site de grupo de pesquisa</h3>
+								<p>
+									Um site que mostra as pesquisas de um grupo de pesquisa dentro
+									de uma universidade, as cores foram pensadas baseando-se no
+									logo, fotos de experimentos reais completam o cabeçalho da
+									página. Como há um grande fluxo de informação para abastecer o
+									site, aplicativos JavaScript preenchem as várias páginas com
+									informações que são atualizadas diretamente em planilhas do
+									Google Sheets.
+								</p>
+								<p>
+									Confira o código
+									<a
+										href="https://github.com/gabirueitz/nanofael"
+										target="_blank"
+										><strong>aqui</strong></a
+									>.
+								</p>
+							</div>
+						</div>
 
-            <div class="letter-container toAnimate">
-                <div class="letter">
-                    <div id="project-msg">
-                        <p> Explore as reações (projetos) prontos na estante de
-                            vidrarias. </p>
-                        <br>
-                        <p>Relatório de experimento: neste experimento foir feito um lorem ipsum dolor sit amet
-                            consectetur
-                            adipisicing elit. Animi molestias optio quisquam!
-                            Asperiores repudiandae error hic odit quo consequuntur nobis sapiente facilis, porro ipsa
-                            quos
-                            perferendis aspernatur ut provident temporibus?
-                            Cumque commodi libero, ullam distinctio recusandae corporis corrupti deleniti, vel modi
-                            impedit
-                            itaque sapiente dolores voluptatum, sed ratione sit obcaecati nesciunt esse hic labore? Qui
-                            sapiente veritatis fuga consequatur nihil!
-                            Amet vel eaque dolorum nostrum esse. Rerum assumenda voluptates repudiandae fuga facilis cum
-                            praesentium voluptatibus incidunt voluptatum quam. </p>
-                    </div>
+						<div class="project" id="project5">
+							<a
+								href="https://gabirueitz.github.io/mott-schottky-calculator/"
+								target="_blank">
+								<div class="projectPhoto">
+									<i class="fa-solid fa-paperclip"></i>
+									<img
+										src="./src/images/calculadora-ms.jpeg"
+										alt="Foto do projeto 5" />
+									<p>Clique aqui para visitar</p>
+								</div>
+							</a>
+							<div class="description">
+								<h3>Calculadora personalizada</h3>
+								<p>
+									Um exemplo de aplicação online para resolver pequenos
+									problemas cotidianos da área da pesquisa. Adicionando
+									informações por meio de um formulário de <i>inputs</i> seguido
+									de um simples click de botão permite obter a informação
+									desejada.
+								</p>
+								<p>
+									Confira o código
+									<a
+										href="https://github.com/gabirueitz/mott-schottky-calculator"
+										target="_blank"
+										><strong>aqui</strong></a
+									>.
+								</p>
+							</div>
+						</div>
 
-                    <div class="project" id="project1">
-                        <a href="https://gabirueitz.github.io/my-linktree-clone/" target="_blank">
-                            <div class="projectPhoto">
-                                <i class="fa-solid fa-paperclip"></i>
-                                <img src="./src/images/linktree-clone.jpeg" alt="Foto do projeto 1">
-                                <p>Clique aqui para visitar</p>
-                            </div>
-                        </a>
-                        <div class="description">
-                            <h3>Linktree Clone</h3>
-                            <p>Projeto baseado no Linktree, uma página única com links de redes sociais. Seu layout foi
-                                feito principalemnte pensando em celular. Um QRCode contém o link para esse deployment,
-                                assim, de uma forma rápida, é possível acessar as redes contidas nessa página totalmente
-                                personalizável.</p>
-                            <p>Veja o código <a href="https://github.com/gabirueitz/my-linktree-clone"
-                                    target="_blank"><strong>aqui</strong></a>.</p>
-                        </div>
-                    </div>
+						<div class="project" id="project6">
+							<a href="" target="_blank">
+								<div class="projectPhoto">
+									<i class="fa-solid fa-paperclip"></i>
+									<img
+										src="./src/images/reagindo.webp"
+										alt="Foto do projeto 6" />
+									<p>Clique aqui para visitar</p>
+								</div>
+							</a>
+							<div class="description">
+								<h3>Projeto em andamento...</h3>
+								<p>
+									Essa reação química ainda está passando por alguns ajustes,
+									logo mais veremos o resultado desse experimento!
+								</p>
+								<p>
+									Confira o código
+									<a href="" target="_blank"><strong>aqui</strong></a
+									>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                    <div class="project" id="project2">
-                        <a href="https://gabirueitz.github.io/casinha-da-vila" target="_blank">
-                            <div class="projectPhoto">
-                                <i class="fa-solid fa-paperclip"></i>
-                                <img src="./src/images/casinha-da-vila.jpeg" alt="Foto do projeto 2">
-                                <p>Clique aqui para visitar</p>
-                            </div>
-                        </a>
-                        <div class="description">
-                            <h3>Site de Escola infantil</h3>
-                            <p>Site de escola infantil totalmente responsivo. Conta com galeria de imagens e carroseis
-                                de
-                                imagens para mostrar fotos que batem com os valores da escola, além de um rápido tour
-                                pelo
-                                espaço físico da mesma. Elementos coloridos dão a ideia de um ambiente atrativo, assim
-                                como
-                                o próprio espaço físico da escola</p>
-                            <p>Confira o código <a href="https://github.com/gabirueitz/casinha-da-vila"
-                                    target="_blank"><strong>aqui</strong></a>.</p>
-                        </div>
-                    </div>
+		<footer id="contact">
+			<h2>Contato</h2>
+			<div class="text">
+				<p>
+					Caso tenha gostado de algum dos meus trabalhos, por favor, não hesite
+					em entrar em contato para conversarmos.
+				</p>
 
-                    <div class="project" id="project3">
-                        <a href="https://gabirueitz.github.io/isadora_duarte" target="_blank">
-                            <div class="projectPhoto">
-                                <i class="fa-solid fa-paperclip"></i>
-                                <img src="./src/images/isadora-duarte.jpeg" alt="Foto do projeto 3">
-                                <p>Clique aqui para visitar</p>
-                            </div>
-                        </a>
-                        <div class="description">
-                            <h3>Site de página única</h3>
-                            <p>Site de advocacia responsivo de uma única página. Os links dão acesso as diferentes
-                                seções do
-                                site, enquanto efeitos <i>paralax</i> dão um ar de sofisticação à página. Um formulário
-                                de
-                                contato
-                                permite que os clientes mandem perguntas diretamente no e-mail. Um botão visivel o tempo
-                                todo dá um acesso rápido ao Whatsapp da empresa.</p>
-                            <p>Confira o código <a href="https://github.com/gabirueitz/isadora_duarte"
-                                    target="_blank"><strong>aqui</strong></a>.</p>
-                        </div>
-                    </div>
+				<div class="social">
+					<p>
+						E <span>não</span> esqueça de <span>me seguir</span> nas redes!!!
+					</p>
+					<br />
+					<ul>
+						<li>
+							<a
+								class="linkedin"
+								href="https://www.linkedin.com/in/roger-gabiru-goncalves/"
+								target="_blank">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								class="instagram"
+								href="https://www.instagram.com/gabirueitz/"
+								target="_blank">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								class="twitter"
+								href="https://twitter.com/gabirueitz"
+								target="_blank">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								class="github"
+								href="https://github.com/gabirueitz"
+								target="_blank">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-                    <div class="project" id="project4">
-                        <a href="https://gabirueitz.github.io/nanofael" target="_blank">
-                            <div class="projectPhoto">
-                                <i class="fa-solid fa-paperclip"></i>
-                                <img src="./src/images/nanofael.jpeg" alt="Foto do projeto 4">
-                                <p>Clique aqui para visitar</p>
-                            </div>
-                        </a>
-                        <div class="description">
-                            <h3>Site de grupo de pesquisa</h3>
-                            <p>Um site que mostra as pesquisas de um grupo de pesquisa dentro de uma universidade, as
-                                cores
-                                foram pensadas baseando-se no logo, fotos de experimentos reais completam o cabeçalho da
-                                página. Como há um grande fluxo de informação para abastecer o site, aplicativos
-                                JavaScript
-                                preenchem as várias páginas com informações que são atualizadas diretamente em planilhas
-                                do
-                                Google Sheets.</p>
-                            <p>Confira o código <a href="https://github.com/gabirueitz/nanofael"
-                                    target="_blank"><strong>aqui</strong></a>.</p>
-                        </div>
-                    </div>
+			<div class="form-area">
+				<form action="">
+					<div class="input-container">
+						<input
+							placeholder="Nome"
+							class="input-field"
+							type="text"
+							required />
+						<label for="name" class="input-label">Nome</label>
+						<span class="input-highlight"></span>
+					</div>
 
-                    <div class="project" id="project5">
-                        <a href="https://gabirueitz.github.io/mott-schottky-calculator/" target="_blank">
-                            <div class="projectPhoto">
-                                <i class="fa-solid fa-paperclip"></i>
-                                <img src="./src/images/calculadora-ms.jpeg" alt="Foto do projeto 5">
-                                <p>Clique aqui para visitar</p>
-                            </div>
-                        </a>
-                        <div class="description">
-                            <h3>Calculadora personalizada</h3>
-                            <p>Um exemplo de aplicação online para resolver pequenos problemas cotidianos da área da
-                                pesquisa. Adicionando informações por meio de um formulário de <i>inputs</i> seguido de
-                                um
-                                simples click de botão permite obter a informação desejada.</p>
-                            <p>Confira o código <a href="https://github.com/gabirueitz/mott-schottky-calculator"
-                                    target="_blank"><strong>aqui</strong></a>.</p>
-                        </div>
-                    </div>
+					<div class="input-container">
+						<input
+							placeholder="e-mail"
+							class="input-field"
+							type="text"
+							required />
+						<label for="email" class="input-label">e-mail</label>
+						<span class="input-highlight"></span>
+					</div>
 
-                    <div class="project" id="project6">
-                        <a href="" target="_blank">
-                            <div class="projectPhoto">
-                                <i class="fa-solid fa-paperclip"></i>
-                                <img src="./src/images/reagindo.webp" alt="Foto do projeto 6">
-                                <p>Clique aqui para visitar</p>
-                            </div>
-                        </a>
-                        <div class="description">
-                            <h3>Projeto em andamento...</h3>
-                            <p>Essa reação química ainda está passando por alguns ajustes, logo mais veremos o resultado
-                                desse experimento!</p>
-                            <p>Confira o código <a href="" target="_blank"><strong>aqui</strong></a>.</p>
-                        </div>
-                    </div>
-                </div>
+					<div class="input-container">
+						<textarea
+							name="message"
+							id="message"
+							cols="30"
+							rows="5"
+							placeholder="Mensagem"
+							class="input-field"
+							required></textarea>
+						<label for="message" class="input-label">Mensagem</label>
+						<span class="input-highlight"></span>
+					</div>
 
-            </div>
-        </div>
-    </section>
+					<p><button type="submit" class="btn">Enviar</button></p>
+				</form>
+			</div>
+		</footer>
 
-    <footer id="contact">
-        <h2>Contato</h2>
-        <div class="text">
-            <p>Caso tenha gostado de algum dos meus trabalhos, por favor, não hesite em entrar em contato para
-                conversarmos.</p>
-
-            <div class="social">
-                <p>E <span>não</span> esqueça de <span>me seguir</span> nas redes!!!</p>
-                <br>
-                <ul>
-                    <li>
-                        <a class="linkedin" href="https://www.linkedin.com/in/roger-gabiru-goncalves/" target="_blank">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="instagram" href="https://www.instagram.com/gabirueitz/" target="_blank">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="twitter" href="https://twitter.com/gabirueitz" target="_blank">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="github" href="https://github.com/gabirueitz" target="_blank">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="form-area">
-            <form action="">
-                <div class="input-container">
-                    <input placeholder="Nome" class="input-field" type="text" required>
-                    <label for="name" class="input-label">Nome</label>
-                    <span class="input-highlight"></span>
-                </div>
-
-                <div class="input-container">
-                    <input placeholder="e-mail" class="input-field" type="text" required>
-                    <label for="email" class="input-label">e-mail</label>
-                    <span class="input-highlight"></span>
-                </div>
-
-                <div class="input-container">
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensagem" class="input-field"
-                        required></textarea>
-                    <label for="message" class="input-label">Mensagem</label>
-                    <span class="input-highlight"></span>
-                </div>
-
-                <p><button type="submit" class="btn">Enviar</button></p>
-
-            </form>
-        </div>
-    </footer>
-
-    <script src="https://kit.fontawesome.com/01778cdb45.js" crossorigin="anonymous"></script>
-    <script src="./src/js/script.js"></script>
-    <script src="./src/js/skillCards.js"></script>
-    <script src="./src/js/projectCards.js"></script>
-    <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=ir240s2a&n=n1.ratufa.io"></script>
-</body>
-
+		<script
+			src="https://kit.fontawesome.com/01778cdb45.js"
+			crossorigin="anonymous"></script>
+		<script src="./src/js/script.js"></script>
+		<script src="./src/js/skillCards.js"></script>
+		<script src="./src/js/projectCards.js"></script>
+		<script
+			id="ratufa_loader"
+			src="https://www.ratufa.io/c/ld.js?f=ir240s2a&n=n1.ratufa.io"></script>
+	</body>
 </html>
